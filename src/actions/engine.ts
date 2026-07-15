@@ -14,7 +14,7 @@ cloudinary.config({
 
 // Configure Apify
 const apifyClient = new ApifyClient({
-  token: 'apify_api_zP6UkcgE9nEdRfvtxgfH9C9S9VG50G26Ch4U',
+  token: 'apify_api_DiJas1ODt8Ue3qzbaNF6D0EbhVQIOM1yBfor',
 });
 
 export async function processNextPendingRecord() {
