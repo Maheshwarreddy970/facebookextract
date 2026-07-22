@@ -14,7 +14,7 @@ cloudinary.config({
 
 // Configure Apify
 const apifyClient = new ApifyClient({
-  token: 'apify_api_DiJas1ODt8Ue3qzbaNF6D0EbhVQIOM1yBfor',
+  token: 'apify_api_SoNIAG1xuFYPPzs3eZEenIedgryI7a3xcivO',
 });
 
 export async function processNextPendingRecord() {
@@ -23,7 +23,7 @@ export async function processNextPendingRecord() {
     where: { logoStatus: 'pending' },
     orderBy: { id: 'asc' } 
   });
-
+console.log(record);
   if (!record) {
     return { status: 'complete', message: 'No more pending records.' };
   }
